@@ -1,0 +1,16 @@
+[project]
+name = "test-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.8",
+    "fastapi>=0.136.1",
+    "pydantic>=2.13.3",
+    "python-dateutil>=2.9.0.post0",
+    "requests>=2.33.1",
+    "sentence-transformers>=5.4.1",
+    "uuid>=1.30",
+    "uvicorn>=0.46.0",
+]

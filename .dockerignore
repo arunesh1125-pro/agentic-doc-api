@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+.git
+.gitignore
+
+data/vector_store/
+models/
+venv/
+node_modules/
+
+*.log

@@ -1,0 +1,12 @@
+# Process a document
+curl -X POST http://localhost:8000/process \
+  -H "Content-Type: application/json" \
+  -d '{"document": "INVOICE\nVendor: ABC Supplies Ltd\nInvoice No: INV-1001\nDate: 2024-01-15\nTotal Amount: USD 1200.00"}'
+
+# Search
+curl "http://localhost:8000/search?q=invoice+from+ABC&top_k=3"
+
+# Empty doc error test
+curl -X POST http://localhost:8000/process \
+  -H "Content-Type: application/json" \
+  -d '{"document": ""}'
